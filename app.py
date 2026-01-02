@@ -32,7 +32,7 @@ patient_records_table = dynamodb.Table('NextGenHospital_PatientRecords')
 contact_messages_table = dynamodb.Table('NextGenHospital_ContactMessages')
 
 # Update this with your actual SNS topic ARN (include the topic name at the end)
-SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:586794464750:topic"
+SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:051826708593:sns"
 
 # Email settings
 SMTP_SERVER = "smtp.gmail.com"
@@ -673,4 +673,5 @@ def server_error(e):
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
+
 
