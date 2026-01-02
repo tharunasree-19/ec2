@@ -23,7 +23,6 @@ dynamodb = boto3.resource('dynamodb', region_name='us-east-1')  # Update to your
 
 # SNS Topic ARN - Update this with your actual SNS Topic ARN
 SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:586794464750:topic"
-
 # DynamoDB Tables
 users_table = dynamodb.Table('NextGenHospital_Users')
 doctors_table = dynamodb.Table('NextGenHospital_Doctors')
@@ -629,6 +628,7 @@ def server_error(e):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
 
 
 
